@@ -12,12 +12,7 @@ const config = {
       // export itself to a global var
       libraryTarget: "var",
       // name of the global var: "Foo"
-      library: "UniversalDrawer"
-  },
-  externals: {
-      // require("jquery") is external and available
-      //  on the global var jQuery
-      "jquery": "jQuery"
+      library: "UD",
   },
   module: {
         loaders: [
@@ -30,7 +25,6 @@ const config = {
                 presets: ['es2015']
               }
             },
-            
             //loader for sass support
             {
               test: /\.scss$/,
