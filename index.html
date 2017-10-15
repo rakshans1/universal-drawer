@@ -2,11 +2,14 @@
 <html>
 <head>
 	<title>Universal Drawer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="dist/css/universal-drawer.min.css">
 </head>
 <body>
 <div class="u-drawer">
-	<div class="header"></div>
+	<div class="header">
+		<span class="toggle close"><i class="fa fa-bars" aria-hidden="true"></i></span>
+	</div>
 	<div class="main">
 		
 	</div>
@@ -15,6 +18,8 @@
 	</div>
 </div>
 <script type="text/javascript" src="dist/js/universal-drawer.min.js"></script>
-<script type="text/javascript">UD.left.init({selector:'.u-drawer',width:'30%'});</script>
+<script type="text/javascript">
+	UD.left.init({selector:'.u-drawer',width:'30%'});
+</script>
 </body>
 </html>

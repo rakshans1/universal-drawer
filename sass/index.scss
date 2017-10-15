@@ -1,9 +1,26 @@
+@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import './variables'; 
+@import '../font-awesome/scss/font-awesome.scss';
+html,body{
+	height:100%;
+	width:100%;
+}
 .u-drawer{
-	border:1px solid #ccc;
 	background-color: #f3f3f3;
+	height:100%;
 }
 .u-drawer .header{
-
+	position: relative;
+	.toggle{
+		position: absolute;
+		right: -35px;
+		top: 0px;
+		padding:10px;
+		border:1px solid #ccc;
+	}
+	.toggle.open i:before{
+		content:'\F00d';
+	}
 }
 .u-drawer .main{
 
