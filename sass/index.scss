@@ -13,13 +13,22 @@ html,body{
 	position: relative;
 	.toggle{
 		position: absolute;
-		right: -35px;
 		top: 0px;
 		padding:10px;
 		border:1px solid #ccc;
 	}
 	.toggle.open i:before{
 		content:'\F00d';
+	}
+}
+.u-drawer-left{
+	.toggle{
+		right: -35px;
+	}
+}
+.u-drawer-right{
+	.toggle{
+		left: -35px;
 	}
 }
 .u-drawer .main{
@@ -33,4 +42,9 @@ html,body{
 	position: fixed;
 	top:0;
 	left:0;
+}
+.u-drawer.right{
+	position: fixed;
+	top:0;
+	right:0;
 }
